@@ -1,6 +1,26 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import { postChatMessage } from '../api.js';
+
+const normalizeNavigation = (payload) => {
+  if (!payload) return null;
+  const normalized = payload.toLowerCase().trim();
+
+  if (['project', 'projects', 'projects page', 'project page'].includes(normalized)) {
+    return 'projects';
+  }
+  if (['blog', 'blogs', 'blog page', 'blogs page'].includes(normalized)) {
+    return 'blog';
+  }
+  if (['home', 'home page', 'homepage'].includes(normalized)) {
+    return 'home';
+  }
+  if (['chat', 'chat page'].includes(normalized)) {
+    return 'chat';
+  }
+  return null;
+};
 
 const ChatPage = ({ setActivePage }) => {
   const [messages, setMessages] = useState([
@@ -32,8 +52,11 @@ const ChatPage = ({ setActivePage }) => {
         ...prev,
         { sender: 'bot', text: data.response ?? 'I am here to help with projects and articles.' }
       ]);
-      if (data.action && data.action.type === 'NAVIGATE' && data.action.payload) {
-        setActivePage(data.action.payload);
+      if (data.action && data.action.type === 'NAVIGATE') {
+        const target = normalizeNavigation(data.action.payload);
+        if (target) {
+          setActivePage(target);
+        }
       }
     } catch (error) {
       setMessages((prev) => [
@@ -80,15 +103,15 @@ const ChatPage = ({ setActivePage }) => {
                 key={`${message.sender}-${index}`}
                 className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
-                <span
+                <div
                   className={`message-bubble ${message.sender} ${
                     message.sender === 'user'
                       ? 'bg-gradient-to-r from-[#4c6ad7] to-[#6f8cff] text-white'
                       : 'bg-white/90 text-[#1a2746] shadow-white/50 dark:bg-[#151f3d]/90 dark:text-[#dce3ff]'
                   }`}
                 >
-                  {message.text}
-                </span>
+                  {message.sender === 'bot' ? <ReactMarkdown>{message.text}</ReactMarkdown> : message.text}
+                </div>
               </div>
             ))}
             {isLoading && (

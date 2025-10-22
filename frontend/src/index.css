@@ -94,3 +94,17 @@ body.dark {
   left: 18px;
   transform: rotate(-40deg);
 }
+
+.message-bubble ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.message-bubble li {
+  margin-top: 0.25rem;
+}
+
+.message-bubble strong {
+  font-weight: 600;
+}
