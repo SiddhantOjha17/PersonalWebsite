@@ -17,3 +17,12 @@ export const fetchBlogs = () => apiFetch('/api/blogs');
 
 export const fetchBlogBySlug = (slug) =>
   apiFetch(`/api/blogs/${encodeURIComponent(slug)}`);
+
+export const postChatMessage = (message) =>
+  apiFetch('/api/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ message })
+  });

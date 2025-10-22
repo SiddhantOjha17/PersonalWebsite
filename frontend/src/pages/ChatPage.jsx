@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
+import { postChatMessage } from '../api.js';
 
 const ChatPage = ({ setActivePage }) => {
   const [messages, setMessages] = useState([
@@ -26,19 +27,7 @@ const ChatPage = ({ setActivePage }) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ message: trimmed })
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to reach the assistant.');
-      }
-
-      const data = await response.json();
+      const data = await postChatMessage(trimmed);
       setMessages((prev) => [
         ...prev,
         { sender: 'bot', text: data.response ?? 'I am here to help with projects and articles.' }
