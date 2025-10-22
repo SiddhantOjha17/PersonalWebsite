@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "code-documentation-slm",
+    "name": "Code Documentation SLM with Reinforcement Learning",
+    "short_summary": "Fine-tuned a Small Language Model (SLM) to act as a Code Documentation SME, using GRPO reinforcement learning to induce reasoning.",
+    "long_summary": "Developed a specialized SLM that functions as a Subject Matter Expert for code documentation. The model was fine-tuned using advanced Reinforcement Learning (GRPO) to generate high-quality, human-like documentation that explains functionality, usage, and logic by analyzing a given codebase.",
+    "tags": ["Fine-Tuning", "SLM", "Reinforcement Learning", "GRPO", "Code Generation"],
+    "github_url": null,
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 2,
+    "project_type": "work"
+  },
+  {
+    "slug": "genesis-automated-testing",
+    "name": "Genesis: AI-Powered Automated Unit Testing",
+    "short_summary": "A multi-agent system that automates unit testing for Python, C++, and Angular, deployed as a microservice on AWS EC2.",
+    "long_summary": "Engineered a multi-agent system to automate the entire unit testing lifecycle across diverse codebases (Python, C++, Angular). Deployed as a scalable microservice on AWS EC2, Genesis significantly boosts QA tester productivity and optimizes the SDLC process.",
+    "tags": ["Automated Testing", "Multi-Agent System", "AWS", "CI/CD"],
+    "github_url": null,
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 3,
+    "project_type": "work"
+  },
+  {
+    "slug": "graphgpt-pipeline",
+    "name": "GraphGPT: Big Data & GraphRAG Pipeline",
+    "short_summary": "A Big Data pipeline using PySpark to process warehouse data into SQL and Neo4j, enabling interactive querying via a GraphRAG system.",
+    "long_summary": "Designed and implemented a full data pipeline (GraphGPT) to process large-scale warehouse data. Utilized PySpark for transformation, storing structured data in SQL and graph relationships in Neo4j. The system is equipped with a GraphRAG interface for advanced, interactive analytics.",
+    "tags": ["PySpark", "Neo4j", "GraphRAG", "Big Data", "ETL"],
+    "github_url": null,
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 8,
+    "project_type": "work"
+  },
+  {
+    "slug": "llm-evaluation-system",
+    "name": "Comprehensive LLM Evaluation System",
+    "short_summary": "An automated system to evaluate the RAG and Agentic capabilities of LLMs using synthetically generated data and 10+ performance metrics.",
+    "long_summary": "Built an end-to-end LLM evaluation pipeline that synthetically generates articles, questions, and ground truth answers. It then rigorously tests an LLM's RAG and agentic performance, scoring it across a suite of over 10 metrics including ROUGE, BLEU, Perplexity, Coherence, and LLM-as-a-Judge.",
+    "tags": ["LLM Evaluation", "Synthetic Data", "RAG", "Agentic AI", "NLP Metrics"],
+    "github_url": null,
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 5,
+    "project_type": "work"
+  },
+  {
+    "slug": "spotlight-ai",
+    "name": "Spotlight AI: Multi-Agent Video Analysis",
+    "short_summary": "A Multi-Agent System using CrewAI for automated face recognition, video processing, and intelligent media analysis.",
+    "long_summary": "Engineered a multi-agent system featuring a Face Recognition Agent to identify individuals in media and a Video Processing Agent to automate editing tasks like highlight creation and scene trimming. The system leverages CrewAI for intelligent, automated media analysis, applicable to security and content creation.",
+    "tags": ["CrewAI", "Multi-Agent System", "Computer Vision", "Face Recognition"],
+    "github_url": "https://github.com/SiddhantOjha17/Spotlight",
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 4,
+    "project_type": "personal"
+  },
+  {
+    "slug": "autocogni-agent",
+    "name": "AutoCogni: Autonomous Computer Agent",
+    "short_summary": "An autonomous agent using vision and reasoning to automate computer tasks in a perceive-reason-act loop.",
+    "long_summary": "Developed an autonomous agent that automates computer tasks by observing the screen, reasoning about next steps, and executing actions with Playwright. The agent's stateful, cyclical logic is managed by LangGraph, and it features persistent, cloud-based memory via Mem0.ai for continuous learning across tasks.",
+    "tags": ["LangGraph", "Playwright", "Autonomous Agent", "Multimodal"],
+    "github_url": "https://github.com/SiddhantOjha17/AutoCogni",
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 1,
+    "project_type": "personal"
+  },
+  {
+    "slug": "medsynth-gan-augmentation",
+    "name": "MedSynth: GAN for Medical Image Augmentation",
+    "short_summary": "Improved brain tumor classification by augmenting an image dataset with Deep Conditional GANs and fine-tuning a ResNet50 model.",
+    "long_summary": "Utilized Deep Conditional Generative Adversarial Networks (DC-GANs) to expand a brain tumor image dataset, enhancing its diversity. Conducted a comparative analysis by fine-tuning a ResNet50 architecture on pre- and post-augmentation data, demonstrating significant improvements in classification accuracy, sensitivity, and model robustness.",
+    "tags": ["GANs", "PyTorch", "Computer Vision", "Medical Imaging"],
+    "github_url": "https://github.com/SiddhantOjha17/MEDSYNTH",
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 6,
+    "project_type": "personal"
+  },
+  {
+    "slug": "asl-translator",
+    "name": "Real-time American Sign Language (ASL) Translator",
+    "short_summary": "A real-time ASL translator using OpenCV for gesture recognition and IBM Watson for text-to-speech conversion.",
+    "long_summary": "Developed a system to address a real-world communication challenge by translating American Sign Language in real-time. The application uses OpenCV and machine learning to achieve high accuracy in recognizing a wide range of ASL gestures, then integrates with IBM Watson's text-to-speech engine to convert the recognized gestures into spoken words.",
+    "tags": ["OpenCV", "IBM Watson", "Computer Vision", "Speech Technology"],
+    "github_url": "https://github.com/SiddhantOjha17/ASL-Classifier-Text-to-Speech",
+    "demo_url": null,
+    "hero_image": null,
+    "display_order": 7,
+    "project_type": "personal"
+  }
+]

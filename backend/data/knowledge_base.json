@@ -1,0 +1,114 @@
+[
+  {
+    "doc_id": "profile_overview",
+    "title": "Professional Overview",
+    "category": "profile",
+    "tags": ["contact", "overview", "ai engineer", "knowledge graphs"],
+    "content": "A passionate AI Engineer focused on leveraging autonomous systems and advanced data interaction to build practical, high-impact solutions. My work involves transforming complex information into actionable insights through knowledge graphs, multi-agent systems, and intelligent analytics. You can find my contact details and explore my projects on my public profiles."
+  },
+  {
+    "doc_id": "education_nmims",
+    "title": "Education",
+    "category": "education",
+    "tags": ["nmims", "btech", "data science"],
+    "content": "Completed a Bachelor of Technology in Data Science at NMIMS, India with a CGPA of 3.58/4. Curriculum emphasized applied machine learning, data engineering, and AI systems design."
+  },
+  {
+    "doc_id": "experience_harman_associate",
+    "title": "Associate Data Scientist — Harman Digital Transformation Solutions",
+    "category": "experience",
+    "tags": ["harman", "associate", "graphgpt", "graph rag", "pyspark"],
+    "content": "Role: Associate Data Scientist at Harman Digital Transformation Solutions (Dec 2023–Present). Designed the GraphGPT pipeline using PySpark to process warehouse telemetry, storing insights in SQL and Neo4j to power a GraphRAG interface for interactive analytics. Built HarmanAgentFramework with NetworkX to simplify multi-agent construction and reduce build time for domain teams. Developed Genesis, an agentic unit-testing service spanning Python, C++, and Angular codebases, delivered as an AWS EC2 microservice to streamline SDLC quality gates."
+  },
+  {
+    "doc_id": "experience_harman_applied_ai_intern",
+    "title": "Applied AI Intern — Harman Digital Transformation Solutions",
+    "category": "experience",
+    "tags": ["harman", "intern", "dpo", "multimodal"],
+    "content": "Served as an Applied AI Intern, fine-tuning a CLIP-based multimodal LLM for medical imaging scenarios covering text-to-image, image-to-image, and hybrid prompts. Implemented a Direct Preference Optimization (DPO) retraining loop backed by a Neo4j action-value graph and live model telemetry. Extended the LLM-Transparency open-source stack to surface interpretability signals for fine-tuned checkpoints, embedding LLM-authored rationales for neuron and attention analysis."
+  },
+  {
+    "doc_id": "experience_nextpy_intern",
+    "title": "AI Researcher Intern — Nextpy",
+    "category": "experience",
+    "tags": ["nextpy", "ai researcher", "prompt engineering"],
+    "content": "As an AI Researcher Intern (Jun 2023), helped build Nextpy, an AI-centric software development framework. Automated fine-tuning workflows so engineers could adapt large language models by simply supplying datasets. Authored prompt templates that boosted model accuracy and response quality for downstream teams."
+  },
+  {
+    "doc_id": "skills_ai_stack",
+    "title": "Skills",
+    "category": "skills",
+    "tags": ["skills", "frameworks"],
+    "content": "Core skills include TensorFlow, Keras, PyTorch, Scikit-Learn, MLflow, and Weights & Biases for experiment tracking. Proficient with HuggingFace Transformers, LangGraph, CrewAI, and NLP pipelines. Tooling experience covers Jamovi and the Microsoft Office suite."
+  },
+  {
+    "doc_id": "activities_training",
+    "title": "Training & Knowledge Sharing",
+    "category": "activities",
+    "tags": ["training", "workshops", "agentic ai", "reinforcement learning"],
+    "content": "Led internal knowledge-sharing sessions on agentic AI, mentoring cohorts of 100+ colleagues to build their own agent workflows. Preparing a reinforcement learning workshop at NMIMS focused on grounding techniques such as GRPO. Delivered AWS AI Practitioner certification coursework and a PyTorch Zero to Hero program, emphasizing cloud-based scaling and fine-tuning best practices."
+  },
+  {
+    "doc_id": "interests_personal",
+    "title": "Personal Interests",
+    "category": "interests",
+    "tags": ["chess", "sports", "reading"],
+    "content": "Enjoys competitive chess tournaments along with lawn tennis, badminton, and football. Outside of engineering, spends time reading research papers and novels to stay inspired by advances in AI."
+  },
+  {
+    "doc_id": "project_autocogni_agent",
+    "title": "Project — AutoCogni: Autonomous Computer Agent",
+    "category": "project",
+    "tags": ["LangGraph", "Playwright", "Autonomous Agent", "Multimodal"],
+    "content": "Developed an autonomous agent that automates computer tasks by observing the screen, reasoning about next steps, and executing actions with Playwright. The agent's stateful, cyclical logic is managed by LangGraph, and it features persistent, cloud-based memory via Mem0.ai for continuous learning across tasks. GitHub: https://github.com/SiddhantOjha17/AutoCogni"
+  },
+  {
+    "doc_id": "project_code_documentation_slm",
+    "title": "Project — Code Documentation SLM with Reinforcement Learning",
+    "category": "project",
+    "tags": ["Fine-Tuning", "SLM", "Reinforcement Learning", "GRPO", "Code Generation"],
+    "content": "Developed a specialized SLM that functions as a Subject Matter Expert for code documentation. The model was fine-tuned using advanced Reinforcement Learning (GRPO) to generate high-quality, human-like documentation that explains functionality, usage, and logic by analyzing a given codebase."
+  },
+  {
+    "doc_id": "project_genesis_automated_testing",
+    "title": "Project — Genesis: AI-Powered Automated Unit Testing",
+    "category": "project",
+    "tags": ["Automated Testing", "Multi-Agent System", "AWS", "CI/CD"],
+    "content": "Engineered a multi-agent system to automate the entire unit testing lifecycle across diverse codebases (Python, C++, Angular). Deployed as a scalable microservice on AWS EC2, Genesis significantly boosts QA tester productivity and optimizes the SDLC process."
+  },
+  {
+    "doc_id": "project_spotlight_ai",
+    "title": "Project — Spotlight AI: Multi-Agent Video Analysis",
+    "category": "project",
+    "tags": ["CrewAI", "Multi-Agent System", "Computer Vision", "Face Recognition"],
+    "content": "Engineered a multi-agent system featuring a Face Recognition Agent to identify individuals in media and a Video Processing Agent to automate editing tasks like highlight creation and scene trimming. The system leverages CrewAI for intelligent, automated media analysis, applicable to security and content creation. GitHub: https://github.com/SiddhantOjha17/Spotlight"
+  },
+  {
+    "doc_id": "project_llm_evaluation_system",
+    "title": "Project — Comprehensive LLM Evaluation System",
+    "category": "project",
+    "tags": ["LLM Evaluation", "Synthetic Data", "RAG", "Agentic AI", "NLP Metrics"],
+    "content": "Built an end-to-end LLM evaluation pipeline that synthetically generates articles, questions, and ground truth answers. It then rigorously tests an LLM's RAG and agentic performance, scoring it across a suite of over 10 metrics including ROUGE, BLEU, Perplexity, Coherence, and LLM-as-a-Judge."
+  },
+  {
+    "doc_id": "project_medsynth",
+    "title": "Project — MedSynth: GAN for Medical Image Augmentation",
+    "category": "project",
+    "tags": ["GANs", "PyTorch", "Computer Vision", "Medical Imaging"],
+    "content": "Utilized Deep Conditional Generative Adversarial Networks (DC-GANs) to expand a brain tumor image dataset, enhancing its diversity. Conducted a comparative analysis by fine-tuning a ResNet50 architecture on pre- and post-augmentation data, demonstrating significant improvements in classification accuracy, sensitivity, and model robustness. GitHub: https://github.com/SiddhantOjha17/MEDSYNTH"
+  },
+  {
+    "doc_id": "project_asl_translator",
+    "title": "Project — Real-time American Sign Language (ASL) Translator",
+    "category": "project",
+    "tags": ["OpenCV", "IBM Watson", "Computer Vision", "Speech Technology"],
+    "content": "Developed a system to address a real-world communication challenge by translating American Sign Language in real-time. The application uses OpenCV and machine learning to achieve high accuracy in recognizing a wide range of ASL gestures, then integrates with IBM Watson's text-to-speech engine to convert the recognized gestures into spoken words. GitHub: https://github.com/SiddhantOjha17/ASL-Classifier-Text-to-Speech"
+  },
+  {
+    "doc_id": "project_graphgpt_pipeline",
+    "title": "Project — GraphGPT: Big Data & GraphRAG Pipeline",
+    "category": "project",
+    "tags": ["PySpark", "Neo4j", "GraphRAG", "Big Data", "ETL"],
+    "content": "Designed and implemented a full data pipeline (GraphGPT) to process large-scale warehouse data. Utilized PySpark for transformation, storing structured data in SQL and graph relationships in Neo4j. The system is equipped with a GraphRAG interface for advanced, interactive analytics."
+  }
+]
