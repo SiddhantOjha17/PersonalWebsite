@@ -1,3 +1,5 @@
+const API_BASE = import.meta.env.VITE_API_BASE || '';
+
 const handleResponse = async (response) => {
   if (!response.ok) {
     const text = await response.text();
@@ -6,9 +8,12 @@ const handleResponse = async (response) => {
   return response.json();
 };
 
-export const fetchProjects = () => fetch('/api/projects').then(handleResponse);
+const apiFetch = (path, options) =>
+  fetch(`${API_BASE}${path}`, options).then(handleResponse);
 
-export const fetchBlogs = () => fetch('/api/blogs').then(handleResponse);
+export const fetchProjects = () => apiFetch('/api/projects');
+
+export const fetchBlogs = () => apiFetch('/api/blogs');
 
 export const fetchBlogBySlug = (slug) =>
-  fetch(`/api/blogs/${encodeURIComponent(slug)}`).then(handleResponse);
+  apiFetch(`/api/blogs/${encodeURIComponent(slug)}`);
