@@ -257,9 +257,17 @@ def agent_node(state: AgentState) -> dict:
     if response.tool_calls:
         for tool_call in response.tool_calls:
             if tool_call["name"] == "navigate_to_section":
-                # Assuming the section is the first and only arg
                 navigation_payload = tool_call["args"].get("section")
-                break # Stop after finding the first navigation call
+                break  # Stop after finding the first navigation call
+    else:
+        # Fallback: infer navigation intent from the assistant's text when the tool was not called
+        text = response.content.lower()
+        if "projects page" in text or "projects section" in text or "view all the projects" in text:
+            navigation_payload = "projects"
+        elif "blog page" in text or "blogs page" in text or "blogs section" in text:
+            navigation_payload = "blogs"
+        elif "home page" in text or "homepage" in text:
+            navigation_payload = "home"
 
     return {"messages": [response], "navigation_payload": navigation_payload}
 
